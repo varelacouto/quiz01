@@ -1,0 +1,126 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Parkinsans", sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    background-color: #F0F8FF;
+    color: #FFF;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    margin: 0.5rem 0 2rem 0;
+}
+
+.img {
+    width: 6rem;
+    filter: drop-shadow(2px 2px 4px #000);
+    
+}
+
+.container {
+    background-color: #F0F8FF;
+    width: 90%;
+    max-width: 50rem;
+    border: 2px solid #e1e1e6;
+    border-radius: 6px;
+    padding: 1rem;
+    box-shadow: 0 0 2px 2px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.questions-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1.5rem;
+}
+
+.question {
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+}
+
+.answers-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    
+}
+
+.next-question {
+    margin-top: 2rem;
+}
+
+.button {
+    background-color: #4863F7;
+    color: #FFF;
+    font-size: 1em;
+    font-weight: 700;
+    border: 0;
+    border-radius: 6px;
+    height: 3rem;
+    padding: 0 2rem;
+    
+    transition: 0.2s;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+}
+
+.button:not(:disabled):hover {
+    filter: brightness(0.8);
+}
+
+.answer:disabled {
+    cursor: not-allowed;
+}
+
+.hide {
+    display: none;
+}
+
+.correct {
+    background-color: #00FF7F;
+    color: #006400;
+}
+
+.incorrect {
+    background-color: #FF4040;
+}
+
+.final-message {
+    color: #000;
+    font-weight: 600;
+}
+
+/* OU 
+.final-message {
+    font-size: 20x;
+    text-align: center;
+}
+
+.final-message span {
+    display: block;
+    margin-top: 8px;
+} */
